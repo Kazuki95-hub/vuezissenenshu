@@ -15,13 +15,10 @@ export default {
     }
   },
   methods: {
-    serchAddress(){
+    async serchAddress(){
+      let address = await axios.get(`https://apis.postcode-jp.com/api/v4/postcodes/${this.number}?HLzIChi5hK02FZ8XOpCFGYFzmP0FJRb7UDFpUHS`);
       
     },
-    created(){
-      axios.get(`https://apis.postcode-jp.com/api/v4/postcodes/${this.address}/HLzIChi5hK02FZ8XOpCFGYFzmP0FJRb7UDFpUHS`)
-      .then()
-    }
   }
 };
 </script>
