@@ -11,7 +11,7 @@ import axios from "axios";
 export default {
   data() {
     return{
-      let jyusho = this.allAddress = address.data[0].allAddress
+      jyusho : this.address.data[0].allAddress
     }
   },
   methods: {
